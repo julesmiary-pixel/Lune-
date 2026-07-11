@@ -1,0 +1,6 @@
+{
+  "name": "lune",
+  "description": "Fampiharana faharanitan-tsaina artifisialy lune amin'ny teny malagasy",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

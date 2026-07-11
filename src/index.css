@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-cursive: "Lora", "Roboto", "Nunito", "Poppins", "Roboto Slab", "Stardos Stencil", cursive;
+}
+
+/* Dynamic Font-Style bindings for .font-cursive elements */
+
+/* ✍️ Font-style: Elegant Serif (Sora-penina - Default) - Soft, beautiful serif italics (Lora - Thin and graceful, not bold!) */
+.lune-font-serif .font-cursive {
+  font-family: "Lora", serif !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  color: #1e293b !important;
+  letter-spacing: normal !important;
+}
+
+/* 🤖 Font-style: Roboto (Modern, Clean) */
+.lune-font-roboto .font-cursive {
+  font-family: "Roboto", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  color: #1e293b !important;
+  letter-spacing: normal !important;
+}
+
+/* 🟢 Font-style: Nunito (Friendly Rounded) */
+.lune-font-nunito .font-cursive {
+  font-family: "Nunito", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  color: #1e293b !important;
+  letter-spacing: normal !important;
+}
+
+/* 🌟 Font-style: Poppins (Geometric & Chic) */
+.lune-font-poppins .font-cursive {
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  color: #1e293b !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* 📚 Font-style: Roboto Slab (Elegant Slab Serif) */
+.lune-font-robotoslab .font-cursive {
+  font-family: "Roboto Slab", serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  color: #1e293b !important;
+  letter-spacing: normal !important;
+}
+
+/* 🎖️ Font-style: Stardos Stencil (Unique Stencil) */
+.lune-font-stardos .font-cursive {
+  font-family: "Stardos Stencil", serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  color: #1e293b !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* 📱 Font-style: Simple Normal Android Font (Tsotra) - Inter / System sans-serif for extreme readability */
+.lune-font-normal .font-cursive {
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  color: #1e293b !important;
+  letter-spacing: normal !important;
+}
+
+/* Custom smooth styling and scrollbar */
+body {
+  font-family: var(--font-sans);
+  background-color: #f7fcf8; /* Very soft greenish off-white background */
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom shake/vibration keyframes */
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-2px, -1px) rotate(-1deg); }
+  20% { transform: translate(-1px, 2px) rotate(1deg); }
+  30% { transform: translate(1px, -2px) rotate(-1deg); }
+  40% { transform: translate(-2px, 1px) rotate(1deg); }
+  50% { transform: translate(2px, -1px) rotate(-1deg); }
+  60% { transform: translate(1px, 2px) rotate(1deg); }
+  70% { transform: translate(-1px, -2px) rotate(-1deg); }
+  80% { transform: translate(2px, 1px) rotate(1deg); }
+  90% { transform: translate(-2px, -1px) rotate(-1deg); }
+}
+
+.animate-vibrate {
+  animation: shake 0.45s ease-in-out;
+}
+
